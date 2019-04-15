@@ -63,26 +63,25 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Clonando um projeto e instalando o Laravel
 
 Vou novamente considerar que você esteja rodando um sistema operacional Linux e com o git instalado, faça o seguinte:
-Clone o projeto
-
-git clone https://github.com/gabrielcardoso1996/finch.git
+### Clone o projeto
+ git clone https://github.com/gabrielcardoso1996/finch.git
+ 
 Acesse o projeto
-
 cd seuprojeto
-Instale as dependências e o framework
 
+### Instale as dependências e o framework
 composer install --no-scripts
-Copie o arquivo .env.example
 
+### Copie o arquivo .env.example
 cp .env.example .env
-Crie uma nova chave para a aplicação
 
+### Crie uma nova chave para a aplicação
 php artisan key:generate
 
-Em seguida você deve configurar o arquivo .env e rodar as migrations com:
-
+### Em seguida você deve configurar o arquivo .env e rodar as migrations com:
 php artisan migrate --seed
 
 Em relação ao npm, isso varia de projeto para projeto, mas provavelmente você também vai precisar rodar os seguintes comandos:
-
 npm install
+E por final
+php artisan serve
