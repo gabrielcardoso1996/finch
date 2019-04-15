@@ -83,5 +83,6 @@ php artisan migrate --seed
 
 Em relação ao npm, isso varia de projeto para projeto, mas provavelmente você também vai precisar rodar os seguintes comandos:
 npm install
+
 E por final
 php artisan serve
