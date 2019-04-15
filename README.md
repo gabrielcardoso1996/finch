@@ -60,12 +60,12 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Banco de Dados
  CREATE SCHEMA `finch`;
 
-#Clonando um projeto e instalando o Laravel
+## Clonando um projeto e instalando o Laravel
 
 Vou novamente considerar que você esteja rodando um sistema operacional Linux e com o git instalado, faça o seguinte:
 Clone o projeto
 
-git clone git@github.com:seuprojeto
+git clone https://github.com/gabrielcardoso1996/finch.git
 Acesse o projeto
 
 cd seuprojeto
