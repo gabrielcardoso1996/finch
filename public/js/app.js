@@ -48218,7 +48218,7 @@ var render = function() {
                   _vm._l(_vm.items, function(item) {
                     return _c(
                       "option",
-                      { key: item, domProps: { value: item.value } },
+                      { key: item.value, domProps: { value: item.value } },
                       [_vm._v(_vm._s(item.label))]
                     )
                   })
@@ -48643,7 +48643,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       var uri = "http://127.0.0.1:8000/api/task/update/" + this.$route.params.id;
       this.axios.post(uri, this.post).then(function (response) {
-        _this2.$router.push({ name: "tasks" });
+        _this2.$router.push({ name: "task" });
       });
     }
   }
@@ -48672,7 +48672,7 @@ var render = function() {
       },
       [
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-6" }, [
+          _c("div", { staticClass: "col-md-10" }, [
             _c("div", { staticClass: "form-group" }, [
               _c("label", [_vm._v("Título:")]),
               _vm._v(" "),
@@ -48702,7 +48702,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-6" }, [
+          _c("div", { staticClass: "col-md-10" }, [
             _c("div", { staticClass: "form-group" }, [
               _c("label", [_vm._v("Status:")]),
               _vm._v(" "),
@@ -48745,7 +48745,7 @@ var render = function() {
                   _vm._l(_vm.items, function(item) {
                     return _c(
                       "option",
-                      { key: item, domProps: { value: item.value } },
+                      { key: item.value, domProps: { value: item.value } },
                       [_vm._v(_vm._s(item.label))]
                     )
                   })
@@ -48757,7 +48757,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-6" }, [
+          _c("div", { staticClass: "col-md-10" }, [
             _c("div", { staticClass: "form-group" }, [
               _c("label", [_vm._v("Descrição:")]),
               _vm._v(" "),

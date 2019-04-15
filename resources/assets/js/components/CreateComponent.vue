@@ -16,7 +16,7 @@
             <label>Status:</label>
             <select v-model="post.status">
               <option disabled value>Escolha um item</option>
-              <option v-bind:key="item" v-for="item in items" :value="item.value">{{item.label}}</option>
+              <option v-for="item in items" :key="item.value" :value="item.value">{{item.label}}</option>
             </select>
           </div>
         </div>

@@ -3,7 +3,7 @@
     <h1>Editar Tarefa</h1>
     <form @submit.prevent="updatePost">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-10">
           <div class="form-group">
             <label>Título:</label>
             <input type="text" class="form-control" v-model="post.title">
@@ -11,18 +11,18 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-10">
           <div class="form-group">
             <label>Status:</label>
             <select v-model="post.status">
               <option disabled value>Escolha um item</option>
-              <option v-bind:key="item" v-for="item in items" :value="item.value">{{item.label}}</option>
+              <option v-for="item in items" :key="item.value" :value="item.value">{{item.label}}</option>
             </select>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-10">
           <div class="form-group">
             <label>Descrição:</label>
             <textarea class="form-control" v-model="post.body" rows="5"></textarea>
@@ -74,7 +74,7 @@ export default {
         this.$route.params.id
       }`;
       this.axios.post(uri, this.post).then(response => {
-        this.$router.push({ name: "tasks" });
+        this.$router.push({ name: "task" });
       });
     }
   }
